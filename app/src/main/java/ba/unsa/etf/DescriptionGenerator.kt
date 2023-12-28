@@ -1,6 +1,5 @@
 package ba.unsa.etf
 
-import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.buildJsonObject
@@ -48,5 +47,6 @@ suspend fun generateDescription(labels: List<String>): String {
     val prompt = buildPrompt(labels)
     val response = sendApiRequest(apiKey, model, prompt)
 
-    return response ?: "No description available"
+   return response ?: "No response available"
 }
+

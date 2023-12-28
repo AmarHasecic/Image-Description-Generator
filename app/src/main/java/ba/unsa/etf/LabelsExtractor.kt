@@ -18,12 +18,7 @@ suspend fun getLabels(imageUri: Uri, context: Context): List<String> = withConte
         val task = labeler.process(image)
         val imageLabels = Tasks.await(task)
 
-        var outputLabels: List<String> = listOf()
-        for (label in imageLabels) {
-            outputLabels = outputLabels + label.text
-        }
-
-        return@withContext outputLabels
+        return@withContext imageLabels.map { "${it.text} - ${it.confidence}" }
 
     } catch (e: Exception) {
         Log.e("ImageClassification", "Error processing image", e)
