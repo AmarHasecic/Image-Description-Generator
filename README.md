@@ -11,5 +11,5 @@ This is an Android application designed to generate image descriptions using Goo
 
 <div style="display: flex; align-items: center;">
   <img src="https://github.com/user-attachments/assets/66527fa4-52c0-4201-9a19-b50c1e5e20b6" alt="" width="220" height="500">
-  <img src="https://github.com/user-attachments/assets/d8fc32f4-ecca-4e14-b326-395b909afc29" alt="" width="220" height="500">
+  <img src="https://github.com/user-attachments/assets/232cd9bc-d772-48b3-84eb-2a561f5c5051" alt="" width="220" height="500">
 </div>
